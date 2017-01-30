@@ -3,7 +3,7 @@ var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, '__build');
 var COMPONENTS_DIR = path.resolve(__dirname, 'src/components/**/*.js');
-var homePageDirectory = path.resolve(__dirname, 'src/pages/home.js');
+var homePageDirectory = path.resolve(__dirname, 'src/pages/home/home.js');
 
 var config = {
   entry: homePageDirectory ,
