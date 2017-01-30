@@ -2,20 +2,26 @@ var webpack = require('webpack');
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, '__build');
-var APP_DIR = path.resolve(__dirname, 'src/components');
+var COMPONENTS_DIR = path.resolve(__dirname, 'src/components/**/*.js');
+var homePageDirectory = path.resolve(__dirname, 'src/pages/home.js');
 
 var config = {
-  entry: APP_DIR + '/firstComponent.js',
+  entry: homePageDirectory ,
   output: {
     path: BUILD_DIR,
-    filename: 'firstComponent.bundle.js'
+    filename: 'home.bundle.js'
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader?sourceMap", "sass-loader?sourceMap"]
       }
     ]
   },
@@ -24,4 +30,4 @@ var config = {
   }
 };
 
-module.exports = config;
+module.exports = config

@@ -2,3 +2,5 @@ node_modules
 .idea/
 *.iml
 __build/
+*.log
+.DS_Store
