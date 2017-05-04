@@ -1,0 +1,40 @@
+section.marquee {
+    background-color: #ffffff;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-left: 2px solid #cecece;
+    border-bottom: 2px solid #cecece;
+    height: 10rem;
+    width:90%;
+    margin: 0 auto 1rem auto;
+    h2{
+        border-bottom: 1px solid #d3d3d3;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        width: 95%;
+        display: block;
+    }
+    .marquee-content {
+        display: inline-block;
+        height: 4.5rem;
+        width: 100%;
+        img {
+            display: inline-block;
+            height: 4rem;
+            width: 30%;
+            vertical-align: middle;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 300;
+            width: 70%;
+            vertical-align: middle;
+        }
+    }
+    .hover-text {
+        display: none;
+    }
+}
