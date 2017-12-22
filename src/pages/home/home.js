@@ -8,6 +8,13 @@ import ConfigData from './configData.js'
 require('../../../scss/home/main.scss');
 
 class Home extends React.Component {
+    constructor() {
+        super(props);
+        this.state = {
+            thing1: "thing1",
+            thing2: "thing2"
+        }
+    }
     render() {
         return (
             <main>

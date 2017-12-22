@@ -9,7 +9,7 @@ ConfigData.heroConfig = {
 ConfigData.aboutConfig = {
     id: "marquee-about",
     header: 'About Me',
-    description: '',
+    description: 'Learn more about me and my skill set.',
     hoverText: 'Learn More',
     iconSrc: './images/about.svg'
 }
